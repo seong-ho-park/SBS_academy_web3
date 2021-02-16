@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/*reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #000
+}
+
+li {
+	list-style: none;
+}
+
+fieldset{
+	
+}
+button{
+	
+}
+
+html {
+	/* font-size: 1em; */
+	font-size: 0.625em;
+	line-height: 1;
+}
+
+body {
+	font-family: arial, sans-serif;
+	background: #9058c9;
+}
+
+/*global*/
+.clearfix:after {
+content: " ";
+clear: both;
+display: block
+}
+
+.screen_out {
+	position: absolute;
+	top: -9999em;
+	left: -999em;
+}
+
+.ir_pm{
+	text-indent:-999em;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+/* pc */
+/* @media all and (min-width: 1025px) {
+.wrap{width:1200px;}
+}*/
+
+/* tablet */
+/*@media all and (min-width: 768px) and (max-width: 1024px) {
+.wrap{width:712px;}
+}*/
+
+/* phone */
+/*@media all and (max-width: 767px) {
+.wrap{width:320px;}
+}*/
+
+/* index */
+.mobile{
+	display: none;
+}
+.wrap{
+	width:80%;
+	/* width:950px; 핸드폰 wrap:80% pc:90% */
+	margin: 0 auto;
+	
+}
+.hder_top{
+	width:100%;
+	padding: 40px 0px;
+	color:white;
+	border:1px black solid; 
+	text-align: center;
+}
+.hder_top a{
+	color:white;
+}
+.hder_top h1{
+	font-size:3.3rem;
+	/* font-size:33px; */
+	font-weight: 200;
+	text-transform: capitalize;
+	margin: 20px 0  
+}
+.hder_top > div{
+	width:100px;
+	height:100px;
+	margin: 0 auto;
+	background: url(/images/logo.svg) no-repeat center;
+	height:150px;
+	border:1px black solid; 
+}
+.hder_top p{
+	font-size: 1.7px;
+	font-weight: 100;
+	line-height: 20px;
+}
+
+section{
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding:40px 0px;
+	text-align: center;
+	background: #fff;
+}
+section h2{
+	font-size:17px;
+	margin-bottom: 30px;
+}
+section h2::after{
+	/* h2의 맨 마지막 자리 */
+	content: " ";
+	display: block;
+	width: 100px;
+	height:3px;
+	margin : 20px auto 0px auto ;
+	background: #b53f3f;
+
+}
+section p {
+	font-size: 15px;
+	line-height: 28px;
+}
+/* Learn More */
+section > a:last-child{
+	display: inline-block;
+	width: 150px;
+	height:40px;
+	line-height: 40px;
+	border:1px solid #000;
+	border-radius: 8px;
+	font-size: 15px;
+	margin-top: 40px;
+}
+section > a:last-child:hover{
+background: #ccc;
+}
+.congue>a:nth-of-type(1){
+	display: inline-block;
+	width: 150px;
+	height:40px;
+	line-height: 40px;
+	border:1px solid #000;
+	border-radius: 8px;
+	font-size: 15px;
+	background: #4acca8;
+	margin-right: 10px;
+
+}
